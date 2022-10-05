@@ -17,8 +17,3 @@ jobs:
         with:
           name: Mirco_Mazzoni_Resume
           path: Mirco_Mazzoni_Resume.pdf
-      - name: Create new release
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          files: Mirco_Mazzoni_Resume.pdf
