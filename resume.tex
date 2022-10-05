@@ -1,0 +1,194 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Mirco Mazzoni} \\ \vspace{1pt}
+    \small +39-351-555-9888 $|$ \href{mailto:mirco.mazzoni.03@gmail.com}{\underline{mirco.mazzoni.03@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/mirco-mazzoni-022816219/}{\underline{linkedin.com/in/mirco}} $|$
+    \href{https://github.com/Penca53}{\underline{github.com/Penca53}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+     \resumeSubheading
+      {University of Genoa}{Genoa, IT}
+      {Bachelor Degree in Computer Science}{Sep. 2022 -- Aug. 2025}
+      \resumeSubheading
+      {ITIS Ferraris-Pancaldo}{Savona, IT}
+      {High School Diploma in Computer Science - Grade 100/100 cum laude}{Sep. 2017 -- Jun. 2022}
+     \resumeSubheading
+      {\href{https://cyberchallenge.it/halloffame/2021}{\underline{CyberChallenge.IT}}}{Genoa, IT}
+      {National project for CyberSecurity training - 3rd place in national CTF competition}{Feb. 2021 -- Aug. 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer Internship}{May 2021 -- Aug. 2021}
+      {Remote}{CodeDay Labs}
+      \resumeItemListStart
+        \resumeItem{Developed an "Inventory Manager" full-stack web application using React and SpringBoot to serve multiple REST APIs, deployed on the AWS infrastructure}
+        \resumeItem{Implemented continuous delivery using GitHub CI/CD Actions to build and scan (with SonarCloud) the application upon a new release}
+        \resumeItem{Managed my schedule to collaborate with a U.S. team to organize the development tasks and report the progress to our mentor (software engineer at T-Mobile)}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+ %-----------AWARDS AND ACHIEVEMENTS-----------
+\section{Awards \& Achievements}
+  \resumeSubHeadingListStart
+     \resumeSubheading
+      {\href{https://www.linkedin.com/company/leadthefuture/mycompany/}{\underline{Lead The Future Mentee}}}{}
+      {LeadTheFuture is a leading mentorship for students in STEM, with an acceptance rate below 20\%}{Sep. 2022 -- Present}
+      \resumeSubheading
+      {Silver Medal - Italian Olympiad in Informatics}{}
+      {Top 0.5\% among all participants}{Nov. 2021}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{{\href{https://github.com/Penca53/aubengine}{\underline{Game Engine}}}} $|$ \emph{C++, OpenGL}}{Sep. 2022 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developing a cross-platform game engine based on the OpenGL rendering API, keeping a hot-swap modular structure to allow future implementations}
+            \resumeItem{Implemented a high-level networking library (TCP and UDP) based on ASIO, allowing the creation of server authoritative real-time multiplayer games and supporting snapshot synchronization}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Localization Editor} $|$ \emph{C\#, XAML, WPF}}{Nov. 2020 -- Jan. 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a desktop app to ease the creation and the management of localization files}
+            \resumeItem{Implemented a versioning system that allows the application to recognize and report old or obsolete translations}
+            \resumeItem{Implemented a retro-compatibility system to maintain and adapt previous localization files}
+            \resumeItem{Sped up overall translation process of a professional application by 76\% thanks to the creation of this tool}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Database Editor} $|$ \emph{C\#, XAML, WPF}}{May 2020 -- Jul. 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a desktop app to create, edit and export custom file-based databases}
+            \resumeItem{Implemented an intuitive spreadsheet view that allows easy and quick edits in tables}
+            \resumeItem{Improved CPU and memory usage by 83\% adding column virtualization to the main table view}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {{\textbf{{\href{https://konstantin890.itch.io/steven-the-cat}{\underline{Steven The Cat - 2D Game}}}} $|$ \emph{C\#, Unity, Aseprite}}}{Sep. 2019}
+          \resumeItemListStart
+            \resumeItem{Developed a game submission for a 7-day long GameJam, receiving an average 4.5/5-star review \newline
+            and scoring 30th over 4000 participants}
+            \resumeItem{Implemented the main character movement and the world map physics to achieve a fun, yet difficult gameplay}
+            \resumeItem{Collaborated with a team to plan and organize the development tasks in an efficient way}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C\#, C/C++, Java, Go, PHP, Python, JavaScript/TypeScript, HTML/CSS, XAML, SQL (Postgres)} \\
+     \textbf{Frameworks and Engines}{: React, Vue, Svelte, Angular, Node.js, Electron, Tauri, WPF, SpringBoot, FastAPI, Gin, ASP.NET, Unity, OpenGL, Docker, MSTest, JUnit, OpenAPI, Swagger} \\
+     \textbf{Developer Tools}{: Git, VS Code, Visual Studio, IntelliJ, Eclipse, Docker, AWS, CI/CD Actions, Trello, Jira}
+    }}
+ \end{itemize}
+\end{document}
