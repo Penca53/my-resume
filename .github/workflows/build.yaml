@@ -10,8 +10,10 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume.tex
+      - name: Rename PDF file
+        run: mv resume.pdf Mirco_Mazzoni_Resume.pdf
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
-          name: PDF
-          path: resume.pdf
+          name: Mirco_Mazzoni_Resume
+          path: Mirco_Mazzoni_Resume.pdf
